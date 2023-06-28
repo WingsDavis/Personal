@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cascadia Code;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(1, 11, 30);
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.ws{
+    text-decoration: none;
+    font-family: chiller;
+    color: rgba(175, 254, 5, 0.968);
+    font-size: 50px;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff ;
+    text-decoration: none;
+    font-size: 18px ;
+}
+
+.header-text h1{
+    font-size: 50px;
+    margin-top: 40px;
+}
+.header-text h1 span{
+    color: rgba(175, 254, 5, 0.968);
+}
+
+.header-text{
+    margin-top: 10%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.name{
+    color: #41416e;
+}
+.dev{
+    text-align: center;
+}
+.nick{
+    /* color: #222; */
+    color: #41416e;
+    margin-top: 40px;
+}
+.bio{
+    color:  #222;
+    margin-top: 20px;
+}
+
+/* More - About Me */
+.hero .texts button {
+  padding: 15px 40px;
+  margin-right: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 5px 5px rgba(175, 254, 5, 0.968);
+  background: transparent;
+  border: 2px solid #41416e;
+  color: #41416e;
+  font-family: "Recoleta";
+}
+
+.hero .texts button:hover {
+  box-shadow: none;
+}
+
+.slider .img-container {
+  background-position: right;
+  background-size: cover;
+  height: 400px;
+  width: 700px;
+  border-radius: 8px;
+}
+
+.user{
+  width: 700px;
+  height: 350px;
+  border-radius: 8px;
+}
+
+#course{
+  padding: 30px 0;
+}
+
+.courses-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.courses-list div{
+  background: rgb(1, 11, 30);
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.courses-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.courses-list div p{
+  font-family: Cascadia Code;
+  font-size: 20px;
+}
+
+.courses-list div:hover{
+  background: rgba(161, 233, 6, 0.968);
+  transform: translateY(-10px);
+  color: #000000;
+}
+
+/* testimonial */
+.testimonial {
+  margin-bottom: 80px;
+  background-position: center;
+}
+
+.testimonial .name{
+  color: black;
+  font-style: italic, bold;
+  font-size: 20px;
+}
+
+.testimonial h1 {
+  color:  rgba(175, 254, 5, 0.968);
+  padding: 0;
+  margin-bottom: 2em;
+  text-align: center;
+  flood-color: #41416e;
+}
+.testimonial .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+.testimonial .container .box {
+  flex: 1;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.05);
+  background-color: #efefef;
+  margin-bottom: 10px;
+}
+.testimonial .container .box head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial .container .box img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+.testimonial .container .box p {
+  line-height: 1.6em;
+  margin-top: 0.5em;
+  color: #000000;
+}
+.testimonial .container .box:hover {
+  transform: scale(1.05);
+}
+
+/* footer */
+footer {
+  background: url(../img/defaultcard-hover-5eef4f0957217910c705b56db7539e0f.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+footer .left {
+  flex: 1;
+}
+footer .left h1 {
+  font-family: "Recoleta";
+  color: rgba(175, 254, 5, 0.968);
+  font-size: 48px;
+}
+footer .middle {
+  flex: 1;
+}
+footer .middle p {
+  line-height: 1.6em;
+  color: #41416e;
+  margin-bottom: 2em;
+  font-size: 20px;
+}
+footer .middle .social button {
+  padding: 15px 40px;
+  margin-right: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 5px 5px rgba(175, 254, 5, 0.968);
+  background: transparent;
+  border: 2px solid #41416e;
+  color: #41416e;
+  font-family: "Recoleta";
+}
+footer .right {
+  flex: 1;
+}
+footer .right h2 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+footer .right .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+footer .right .links a {
+  -webkit-text-decoration: 2px dashed #41416e;
+          text-decoration: 2px dashed #41416e;
+  color: #41416e;
+  padding: 8px;
+  font-size: 18px;
+}
+footer {
+  padding: 40px 20px;
+  /* flex-direction: column-reverse; */
+  border-radius: 0;
+  margin-bottom: 0;
+  gap: 2em;
+  align-items: center;
+  text-align: center;
+}
+footer .middle p {
+  font-size: 18px;
+}  
+
+/*About Me*/
+#about{
+    padding: 80px 0;
+    color: #FFFFFF;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.rows{
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+
+.details{
+    justify-content: space-between;
+    flex-basis: 60%;
+}
+
+.user{
+    width: 90%;
+    height: 290px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-col-2{
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+.sub-title{
+   font-size: 60px;
+   font-weight: 600;
+   color: rgba(175, 254, 5, 0.968);
+   margin-top: 30px;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 10px 0 20px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: rgba(175, 254, 5, 0.968);
+    /* color: #41416e; */
+}
+
+.tab-links::after{
+    content: "";
+    /* width: 0; */
+    height: 3px;
+    background-color: rgba(254, 30, 5, 0.968);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin : 10px 0;
+}
+
+.tab-contents ul li span{
+    color: rgba(175, 254, 5, 0.968);
+    font-size: 20px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* photo gallery */
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gallery{
+  margin-top: 40px;
+}
+
+/* contact-me */
+
+#contact{
+  margin-top: 40px;
+}
+
+.contact-left{
+  flex-basis: 30%;
+  margin-top: 100px;
+}
+
+.con{
+  text-decoration: none;
+  color: rgba(161, 233, 6, 0.968);
+}
+
+.contact-left p{
+  margin-top: 40px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.contact-left p i{
+  font-size: 25px;
+}
+
+.social-icons{
+  margin-top: 30px;
+}
+
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 3px;
+  color: #fff;
+}
+
+.contact-right{
+  flex-basis: 60%;
+}
+
+.contact-right form{
+  width: 100%;
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: #41416e;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+  .slider .img-container{
+    background-position: right;
+    background-size: cover;
+    height: 100px;
+    width: 500px;
+    border-radius: 6px;
+  }
+  .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .header-text h1{
+    font-size: 30px;
+  }
+  .container{
+    padding: 10px 10%;
+}
+}
