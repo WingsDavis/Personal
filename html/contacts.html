@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Contact</title>
     <script src="https://kit.fontawesome.com/23247ff6ed.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style/style.css">
 </head>
@@ -20,7 +20,7 @@
                     <li><a href="./reference.html">Reference Page</a></li>
                     <li><a href="./gallery.html">Photo Gallery</a></li>
                     <li><a href="./documents.html">Documents Page</a></li>
-                    <li><a href="./contacts.html">Contact</a></li>
+                    <li><a class="active" href="./contacts.html">Contact</a></li>
                 </ul>
             </nav>
 
@@ -41,32 +41,24 @@
                 
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
                     <input type="number" name="Phone" placeholder="+233....." required>
-                    <textarea name="Message" rows="1" placeholder="Subject"></textarea>
+                    <textarea name="Subject" rows="1" placeholder="Subject"></textarea>
                     <textarea name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
                     <section class="hero hero2">
                         <div class="texts">
                             <button type="submit"><i class="fa-regular fa-paper-plane"></i> Submit</button>
                             <button type="reset">Reset</button>
                         </div>
-                    </section>
-                    
+                    </section> 
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
 <!-- footer -->
 <footer>
     <div class="left"><h1>Wings.</h1></div>
@@ -90,6 +82,25 @@
         </div>
     </div>
     </footer>
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzowHGICgX1UcEpH8cdJsEvSbs06TT_8RtEYQAqNZw4dIRwvUaYbembFTCXnasrnOysCw/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },3000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
 <script src="../js/script.js"></script>
 </body>
 </html>

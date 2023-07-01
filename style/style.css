@@ -17,6 +17,10 @@ body{
     background-position: center;
 }
 
+.active{
+  color: rgba(175, 254, 5, 0.968);
+}
+
 .ws{
     text-decoration: none;
     font-family: chiller;
@@ -75,8 +79,12 @@ nav ul li a{
     margin-top: 40px;
 }
 .bio{
-    color:  #222;
+    color:  rgba(175, 254, 5, 0.968);
     margin-top: 20px;
+}
+.bios{
+  color:  #fff;
+  margin-top: 20px;
 }
 
 /* More - About Me */
@@ -115,6 +123,7 @@ nav ul li a{
 
 #course{
   padding: 30px 0;
+  margin-top: -100px;
 }
 
 .courses-list{
@@ -148,6 +157,10 @@ nav ul li a{
   background: rgba(161, 233, 6, 0.968);
   transform: translateY(-10px);
   color: #000000;
+}
+
+.calender{
+  margin-left: 100px;
 }
 
 /* testimonial */
@@ -335,19 +348,11 @@ footer .middle p {
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    color: rgba(175, 254, 5, 0.968);
-    /* color: #41416e; */
+    color: #41416e;
 }
 
-.tab-links::after{
-    content: "";
-    /* width: 0; */
-    height: 3px;
-    background-color: rgba(254, 30, 5, 0.968);
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
+.tab-links:hover{
+    color: #efefef;
 }
 
 .tab-links.active-link::after{
@@ -371,6 +376,77 @@ footer .middle p {
 .tab-contents.active-tab{
     display: block;
 }
+
+/* reference */
+#refrees{
+  padding: 50px 0;
+  margin-top: 50px;
+}
+
+.ref-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin-top: 20px;
+}
+
+.ref{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.ref img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer{
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.6), #41416e);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.layer h3{
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.layer a{
+  margin-top: 20px;
+  color: #FFAA39;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.ref:hover img{
+  transform: scale(1.1);
+}
+
+.ref:hover .layer{
+  height: 100%;
+}
+
 
 /* photo gallery */
 div.gallery {
@@ -446,6 +522,13 @@ div.desc {
   font-size: 30px;
   margin-right: 3px;
   color: #fff;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+  color: rgba(161, 233, 6, 0.968);
+  transform: translateY(-5px);
 }
 
 .contact-right{
@@ -468,6 +551,12 @@ form input, form textarea{
   border-radius: 6px;
 }
 
+#msg{
+  color: rgba(161, 233, 6, 0.968);
+  margin-top: 20px;
+  display: block;
+}
+
 @media only screen and (max-width: 600px) {
   .slider .img-container{
     background-position: right;
@@ -487,3 +576,5 @@ form input, form textarea{
     padding: 10px 10%;
 }
 }
+
+

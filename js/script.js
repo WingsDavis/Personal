@@ -25,7 +25,7 @@ const images = [
 const slider = document.querySelector('.img-container');
 
 function startSlider() {
-  setInterval(changeBackground, 10000);
+  setInterval(changeBackground, 5000);
 }
 
 function changeBackground() {
@@ -35,3 +35,5 @@ function changeBackground() {
 
 startSlider();
 changeBackground();
+
+
