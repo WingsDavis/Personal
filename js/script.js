@@ -22,18 +22,18 @@ const images = [
   './images/slide2.jpg',
   './images/slide3.jpg'
 ];
-const slider = document.querySelector('.img-container');
+const sliding = document.querySelector('.img-container');
 
-function startSlider() {
+function startSliding() {
   setInterval(changeBackground, 5000);
 }
 
 function changeBackground() {
-  slider.style.backgroundImage = `url('${images[index]}')`;
+  sliding.style.backgroundImage = `url('${images[index]}')`;
   index = (index + 1) % images.length;
 }
 
-startSlider();
+startSliding();
 changeBackground();
 
 

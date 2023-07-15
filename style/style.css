@@ -107,7 +107,7 @@ nav ul li a{
   box-shadow: none;
 }
 
-.slider .img-container {
+.sliding .img-container {
   background-position: right;
   background-size: cover;
   height: 400px;
