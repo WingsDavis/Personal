@@ -294,6 +294,33 @@ footer .middle p {
   font-size: 18px;
 }  
 
+
+#document{ 
+  min-height: 25vh;
+}
+
+#document .hero{
+  margin-left: 42%;
+  margin-top: 18%;
+}
+
+#document{ 
+  min-height: 25vh;
+}
+
+#document .hero{
+  margin-left: 30%;
+  margin-top: 18%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#document .hero .texts .docu{
+  color: #fff;
+}
+
+
+
 /*About Me*/
 #about{
     padding: 80px 0;
