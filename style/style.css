@@ -413,6 +413,7 @@ footer .middle p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 23px;
 }
 .skills_head {
   width: 100%;
@@ -426,7 +427,7 @@ footer .middle p {
   margin-bottom: 20px;
 }
 .skills_head h2 span {
-  color: #ffa500;
+  color: rgba(175, 254, 5, 0.968);
 }
 .skills_main {
   width: 100%;
@@ -459,35 +460,35 @@ footer .middle p {
   background-color: rgba(161, 233, 6, 0.968);
   border-radius: 25px;
 }
-.skill_bar .bar .suite {
-  width: 90%;
+.skill_bar .bar .python {
+  width: 80%;
   animation: suite 2s;
 }
-@keyframes html {
+@keyframes python {
   0% {
     width: 0%;
   }
   100% {
-    width: 90%;
+    width: 80%;
   }
 }
-.skill_bar .bar .css {
-  width: 85%;
-  animation: css 2s;
-}
-@keyframes css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-.skill_bar .bar .css {
+.skill_bar .bar .django {
   width: 80%;
-  animation: css 2s;
+  animation: django 2s;
 }
-@keyframes css {
+@keyframes django {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skill_bar .bar .html-css {
+  width: 80%;
+  animation: html-css 2s;
+}
+@keyframes html-css {
   0% {
     width: 0%;
   }
@@ -496,22 +497,58 @@ footer .middle p {
   }
 }
 .skill_bar .bar .js {
-  width: 80%;
-  animation: css 2s;
+  width: 62%;
+  animation: js 2s;
 }
 @keyframes js {
   0% {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 62%;
   }
 }
-.skill_bar .bar .wordpress {
-  width: 85%;
-  animation: wordpress 2s;
+.skill_bar .bar .git {
+  width: 81%;
+  animation: git 2s;
 }
-@keyframes wordpress {
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 81%;
+  }
+}
+.skill_bar .bar .hack {
+  width: 85%;
+  animation: hack 2s;
+}
+@keyframes hack {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+.skill_bar .bar .linux {
+  width: 86%;
+  animation: linux 2s;
+}
+@keyframes linux {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 86%;
+  }
+}
+.skill_bar .bar .bash {
+  width: 75%;
+  animation: bash 2s;
+}
+@keyframes bash {
   0% {
     width: 0%;
   }
@@ -519,53 +556,29 @@ footer .middle p {
     width: 75%;
   }
 }
-.skill_bar .bar .c {
-  width: 70%;
-  animation: c 2s;
+.skill_bar .bar .data {
+  width: 83%;
+  animation: data 2s;
 }
-@keyframes c {
+@keyframes data {
   0% {
     width: 0%;
   }
   100% {
-    width: 70%;
-  }
-}
-.skill_bar .bar .csharp {
-  width: 65%;
-  animation: csharp 2s;
-}
-@keyframes csharp {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 65%;
-  }
-}
-.skill_bar .bar .java {
-  width: 60%;
-  animation: java 2s;
-}
-@keyframes java {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 60%;
+    width: 83%;
   }
 }
 
-.skill_bar .bar .php {
-  width: 60%;
-  animation: php 2s;
+.skill_bar .bar .tutor {
+  width: 90%;
+  animation: tutor 2s;
 }
-@keyframes php {
+@keyframes tutor {
   0% {
     width: 0%;
   }
   100% {
-    width: 60%;
+    width: 90%;
   }
 }
 
